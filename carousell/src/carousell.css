@@ -12,11 +12,19 @@
     align-items: center;
     gap: 10px;
 }
+.images{
+    perspective: 100px;
+}
 .images, .images img {
     border-radius: 10px;
-    transition: 1s ease;
+    transition: .2s ease;
+    width: 100%;
 }
-
+.images img:hover{
+    margin-top: -15px;
+    box-shadow: 0 10px 10px black;
+    transform: rotateX(-1deg);
+}
 .next, .prev{
     background: gray;
     padding: 10px 10px 5px;
@@ -24,4 +32,8 @@
     font-size: 30px;
     border-radius: 50px;
     cursor: pointer;
+}
+.next:hover, .prev:hover{
+    background: aqua;
+    color: black;
 }
