@@ -1,0 +1,27 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.center{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.images, .images img {
+    border-radius: 10px;
+    transition: 1s ease;
+}
+
+.next, .prev{
+    background: gray;
+    padding: 10px 10px 5px;
+    color: white;
+    font-size: 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
