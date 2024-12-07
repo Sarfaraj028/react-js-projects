@@ -1,0 +1,30 @@
+.container{
+    margin-top: 100px;
+    width: 430px;
+    background: rgb(39, 30, 30);
+    padding: 5px 10px;
+    
+}
+.content{
+    background: rgb(24,24,24);
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    border: 1px solid rgb(0, 122, 122);
+    border-radius: 8px;
+}
+.content h1{
+    position: relative;
+    font-size: 35px;
+    padding: 5px 0;
+}
+.container h1 span{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+
+}
+.content p{
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
