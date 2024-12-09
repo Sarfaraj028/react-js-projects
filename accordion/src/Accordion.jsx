@@ -11,7 +11,6 @@ function Accordion() {
       setActiveIndex(null); // hide all 
     } else {
       setActiveIndex(index); // display one 
-      
     }
 
   };
@@ -20,9 +19,9 @@ function Accordion() {
   return (
     <div className="container">
       {data.map((item, index) => (
-        <div className="content" key={index}>
-          <h1>{item.question} <span  onClick={() => handleToggle(index)}>+</span> </h1>
-          {activeIndex === index && <p>{item.answer}</p> } {/* 0 and null both falsy value */}
+        <div className={activeIndex === index ? 'content show' : 'content'} key={index}>
+          <h1 onClick={() => handleToggle(index)}>{item.question} <span>{activeIndex === index ? '-' : '+'}</span> </h1>
+          <p>{item.answer}</p>  {/* 0 and null both falsy value */}
         </div>
       ))}
     </div>

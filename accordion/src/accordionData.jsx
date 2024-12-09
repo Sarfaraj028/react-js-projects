@@ -5,15 +5,15 @@ const data = [
     },
     {
         question: "Why we use React",
-        answer: "Component-based architecture. Virtual DOM for efficient updates. Declarative UI updates based on state. Unidirectional data flow for predictable apps. JSX syntax for HTML-like code in JavaScript. Hooks for managing state and side effects. React Router for SPA navigation. Large ecosystem of libraries and community support."
+        answer: "We use React.js because it provides a fast, efficient, and flexible way to build user interfaces. It simplifies the development of interactive web applications by using components, allowing for reusable code, efficient updates with its virtual DOM, and easy state management. React also enables the creation of dynamic and responsive UIs with minimal performance overhead, making it ideal for building modern, scalable web applications."
     },
     {
         question: "Components in React",
-        answer: "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that do not yet ..."
+        answer: "In React, components are reusable, self-contained building blocks that define how a user interface (UI) should appear and behave. Each component can manage its own state and render UI elements. Components can be either functional or class-based, and they can be nested, updated, and reused throughout an application to create dynamic and modular UIs."
     }
     ,{
         question: "Hooks in React",
-        answer: "Lorem ipsum is a dummy or placeholder text commonly used in graphic design, publishing, and web development to fill empty spaces in a layout that do not yet ..."
+        answer: "In React, hooks are functions that allow you to use state, lifecycle features, and other React features in functional components. Hooks were introduced to simplify the use of state and side effects in components without needing to use class components."
     }
 ]
 
