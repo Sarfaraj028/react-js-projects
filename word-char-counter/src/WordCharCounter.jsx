@@ -25,6 +25,12 @@ function WordCharCounter() {
       navigator.clipboard.writeText(textAreaRef.current.value);
     }
 
+    // Remove Extra space from the text
+    const handleExtraSpace = () =>{
+      let newText = text.split(/[ ]+/);
+      setText(newText.join(" "))
+    }
+
   return (
     <div className='center'>
         <h2>Enter your text here........</h2>
@@ -34,6 +40,7 @@ function WordCharCounter() {
           <span onClick={toUpper} >to UppeCase</span>
           <span onClick={handleClear} >Clear Text</span>
           <span onClick={handleCopy} >Copy Text</span>
+          <span onClick={handleExtraSpace} >Remove Extra Space</span>
           
         </p>
 
