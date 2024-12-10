@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { useRef, useState } from 'react'
 import './style.css';
 function WordCharCounter() {
     const [text, setText] = useState("message");
+    const textAreaRef = useRef(null);
 
     const handleChange = (e) =>{
         setText(e.target.value)
@@ -17,14 +18,22 @@ function WordCharCounter() {
       setText(text.toUpperCase())
     }
 
+    // copy text 
+    const handleCopy = () =>{
+      // let text = document.querySelector("textarea");
+      textAreaRef.current.select();
+      navigator.clipboard.writeText(textAreaRef.current.value);
+    }
+
   return (
     <div className='center'>
         <h2>Enter your text here........</h2>
-        <textarea rows={10}  cols={70} value={text} onChange={handleChange}/>
+        <textarea ref={textAreaRef} rows={10}  cols={70} value={text} onChange={handleChange}/>
         <p>
           {text.split(" ").filter(Boolean).length}  words  {text.length} characters 
           <span onClick={toUpper} >to UppeCase</span>
           <span onClick={handleClear} >Clear Text</span>
+          <span onClick={handleCopy} >Copy Text</span>
           
         </p>
 
