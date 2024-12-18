@@ -18,9 +18,13 @@ function Carousell() {
     const prevSlide = () => {
         setCurrent(current === 0 ? images.length - 1 : current - 1)
     }
+
+    function print(){
+        window.print()
+    }
     
   return (
-    <div className='center'>
+    <div className='center'><p onClick={print}>print</p>
         <div className='prev' onClick={prevSlide}><i className='bx bx-left-arrow-alt'></i></div>
         <div className='images'>
             {/* {images.map((image, index) =>
@@ -35,6 +39,7 @@ function Carousell() {
                    
         </div>
         <div className='next' onClick={nextSlide}><i class='bx bx-right-arrow-alt' ></i></div>
+        <p onClick={print}>print</p>
     </div>
   )
 }

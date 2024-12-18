@@ -5,3 +5,8 @@ body{
   display: flex;
   justify-content: center;
 }
+
+.toggle{
+  text-align: right;
+  color: red;
+}

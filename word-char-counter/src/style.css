@@ -1,44 +1,43 @@
 
-*{
-    color: white;
-    background: rgb(30, 30, 30);
-}
-
-body{
-    display: flex;
-    justify-content: center;
-  }
-.center{
-    margin-top: 100px;
+.container{
     width: 100%;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* padding: 50px 4%; */
+    margin-top: 50px;
 }
-h2 {
-    text-align: left;
+.container .center{
+    width: 80%;
+}
+.container .center h2{
     margin-bottom: 10px;
-}
-P{
-    text-align: left;
-    margin-top: -5px;
-    max-width: 800px;
-    width: 80vw;
-}
-textarea{
-    border: 2px solid gray;
-    width: 80vw;
-    max-width: 800px;
-    margin-bottom: 10px;
-}
-span{
-    cursor: pointer;
-    float: right;
-    font-size: 15px;
-    border: 2px solid blue;
-    padding: 5px 8px;
-    margin: 5px 5px 0 0 ;
 }
 
-span:hover{
-    background: blue;
+.container .center textarea{
+    width: 100%;
+    max-width: 850px;
 }
+
+/* buttons  */
+.container .center .btns{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.container .center .btns span{
+    background: dodgerblue;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+/* counter area  */
+.container .center p{
+    margin-bottom: 8px;
+}
+
+
