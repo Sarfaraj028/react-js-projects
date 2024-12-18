@@ -10,6 +10,7 @@ export class NewsItem extends Component {
             className="rounded-t-lg max-w-xm"
             src={imageUrl}
             alt=""
+            style={{width: "100%", height: "200px"}}
           />
         </a>
         <div className="p-5">

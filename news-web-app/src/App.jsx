@@ -12,7 +12,7 @@ export class App extends Component {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
-            <Route index element={<NewsRoom pageSize='7'/>} />
+            <Route index element={<NewsRoom pageSize='8'/>} />
             <Route path="about" element={<About />} />
             <Route path="*" element={<NoPages />} />
           </Route>

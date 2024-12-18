@@ -57,9 +57,9 @@ export class NewsRoom extends Component {
   render () {
     return (
       <div className="px-10">
-        <h2 className="mt-4 text-2xl font-semibold ">Top Headlines:</h2>
+        <h2 className="mt-4 underline text-center text-2xl font-semibold ">NewsSuar - Top Headlines:</h2>
         {this.state.loading && <Loader />}
-        <div className="w-full gap-3 py-10 flex justify-center flex-wrap">
+        <div className="w-full gap-3 py-10 pt-4 flex justify-center flex-wrap">
           {!this.state.loading && this.state.articles.map((element) => {
             return (
               <NewsItem
