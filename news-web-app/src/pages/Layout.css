@@ -1,0 +1,14 @@
+.active{
+    display: none;
+}
+nav div{
+}
+.active-link{
+    border-bottom: 2px solid dodgerblue;
+}
+
+@media screen and(max-width: 1200px) {
+    nav div{
+        display: block;
+    }
+}
